@@ -34,7 +34,7 @@ function addToList(){
                 itemLabel.setAttribute("class", "completed");
                 completedCount++;
                 console.log(completedCount);
-                document.querySelector("#nbrFinishedTasks").innerHTML = "Number of finished tasks: "+completedCount;
+                document.querySelector("#nbrFinishedTasks").innerHTML = completedCount + " completed";
             }
         );
         trashcan.addEventListener("click", function(){

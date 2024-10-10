@@ -1,27 +1,35 @@
 html{
     height: 100%;
 }
+
 body{
     background-image: linear-gradient(rgb(255,197,197),rgb(254,127,126));
 }
 
 div{
-    width: 35%;
+    width: 37%;
     background-color: white;
     margin: auto;
-    padding-top: 0px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);;
     animation: load 2s;
 }
-ul{
-    font-family: Calibri;
-    font-size: 20px;
-    list-style-type: none;
 
+h1{
+    text-align: center;
+    padding-bottom:0px ;
+    margin-top: 5px;
+    font-size: 45px;
+    top: 10px;
     
 }
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    list-style-type: none;  
+}
+
 span{
     margin: 7px;
 }
@@ -36,53 +44,61 @@ ul li{
     color: gray;
     transition: color, 1s ;
 }
-h1{
-    text-align: center;
-    padding-bottom:0px ;
-    margin-top: 0px;
-    font-size: 40px;
-    top: 10px;
-    
-}
+
 .trashcan{
     border:none;
     background-color: white;
+    cursor: pointer;
 }
 
 button{
-  cursor: pointer;
- 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 25px;
+  text-align: center;
 }
+
+input{
+    height: 25px;
+    width: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 #inputClicked{
     border:blue;
 }
 
 #nbrFinishedTasks{
-    font-family: Calibri;
-    font-size: 14px;
-    top: 50px;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /*top: 10px;*/
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -17px;  
 }
-
 
 .warning{
     color:rgb(199, 33, 36);
     font-style: italic;
-    animation: blink 1s;
-    
+    animation: blink 1s; 
 }
 
 @keyframes blink{
     0% {
-        opacity: 1;
-    }
-    25% {
         opacity: 0;
     }
-    50% {
+    20% {
         opacity: 1;
     }
-    75% {
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
         opacity: 0;
     }
     100%{
